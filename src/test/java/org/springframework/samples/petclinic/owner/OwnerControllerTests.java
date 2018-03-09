@@ -96,6 +96,7 @@ public class OwnerControllerTests {
     }
 
     @Test
+
     public void testProcessFindFormSuccess() throws Exception {
         given(this.owners.findByLastName("")).willReturn(Lists.newArrayList(george, new Owner()));
         mockMvc.perform(get("/owners"))
